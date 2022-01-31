@@ -34,7 +34,7 @@ input {
     background-color: #8EDAFC;
 }
 
-/* colors */
+/* text */
 
 .color-gray{
     color: #B1B1B1;
@@ -49,11 +49,15 @@ input {
     color: #8EDAFC;
 }
 
+.size-medium{
+    font-size: 12px;
+}
+
 /* Sections */
 
 /* Contacts Section */
 
 #contacts-section{
-    max-height: 500px;
+    max-height: 400px;
     overflow-y: scroll;
 }
