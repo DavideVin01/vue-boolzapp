@@ -55,6 +55,9 @@ input {
 .size-big{
     font-size: 16px;
 }
+.size-bigger{
+    font-size: 20px;
+}
 
 /* --- Sections --- */
 
@@ -67,6 +70,6 @@ input {
 
 #chat-bg{
     background-image: url('../img/mine.jpg');
-    height: 300px;
+    height: 465px;
     width: 100%;
 }
