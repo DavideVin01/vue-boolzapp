@@ -24,7 +24,7 @@ img{
         #DCDBD2 15%,
         #DCDBD2 85%,
         #DCDBD2 85%
-      );
+    );
 }
 
 .bg-lightgray{
@@ -38,6 +38,9 @@ img{
 
 .color-gray{
     color: #B1B1B1;
+}
+.color-darkgray{
+    color: #757575;
 }
 .color-lightblue{
     color: #8EDAFC;
