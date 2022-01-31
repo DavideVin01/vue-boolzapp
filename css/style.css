@@ -52,8 +52,11 @@ input {
 .size-medium{
     font-size: 12px;
 }
+.size-big{
+    font-size: 16px;
+}
 
-/* Sections */
+/* --- Sections --- */
 
 /* Contacts Section */
 
