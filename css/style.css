@@ -64,3 +64,9 @@ input {
     max-height: 400px;
     overflow-y: scroll;
 }
+
+#chat-bg{
+    background-image: url('../img/mine.jpg');
+    height: 300px;
+    width: 100%;
+}
