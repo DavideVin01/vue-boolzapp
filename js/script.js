@@ -22,9 +22,27 @@ const root = new Vue ({
             avatar: '_3',
           },
           {
-            name: 'Luisa',
+            name: 'Marco',
             avatar: '_4',
           },
+          {
+            name: 'Giuseppe',
+            avatar: '_5',
+          },
+          {
+            name: 'Luisa',
+            avatar: '_6',
+          },
+          {
+            name: 'Paola',
+            avatar: '_7',
+          },
+          {
+            name: 'Salvatore',
+            avatar: '_8',
+          },
+          
+          
         ]
       }
 });
