@@ -1,0 +1,14 @@
+#background{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    background-image:
+      linear-gradient(
+        to bottom, 
+        #009688,
+        #009688 15%,
+        #DCDBD2 15%,
+        #DCDBD2 85%,
+        #DCDBD2 85%
+      );
+}
