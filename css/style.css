@@ -1,7 +1,7 @@
 #background{
-    width: 100vw;
+    width: auto;
     height: 100vh;
-    background-color: red;
+    background-color: #009688;
     background-image:
       linear-gradient(
         to bottom, 
