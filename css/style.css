@@ -13,6 +13,10 @@
       );
 }
 
+.color-gray{
+    color: #B1B1B1;
+}
+
 img{
     max-width: 50px;
     border-radius: 50%;
@@ -20,4 +24,15 @@ img{
 
 #avatar-section{
     background-color: #EAEAEA;
+}
+
+#notification-section{
+    background-color: #8EDAFC;
+}
+#search-section{
+    background-color: #8EDAFC;
+}
+
+.col{
+    width: 0;
 }
