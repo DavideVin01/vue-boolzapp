@@ -12,3 +12,12 @@
         #DCDBD2 85%
       );
 }
+
+img{
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+#avatar-section{
+    background-color: #EAEAEA;
+}
