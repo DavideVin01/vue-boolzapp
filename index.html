@@ -15,6 +15,7 @@
         <div id="background" class="container-fluid p-4">
             <div class="container">
                 <div class="row d-flex flex-row">
+                    <!-- Left Column -->
                     <div class="col-4 d-flex flex-column p-0" id="left-col">
 
                         <!-- Avatar Section -->
@@ -61,13 +62,14 @@
                         
                     </div>
                     
+                    <!-- Right Column -->
                     <div class="col-8 p-0" id="right-col">
 
                         <!-- Status Section -->
                         <div class="col-12 d-flex justify-content-between p-2 bg-lightgray" id="avatar-section">
                             <div role="button">
                                 <img src="img/avatar_1.jpg" alt="avatar">
-                                <span>Michele</span>
+                                    <span>Michele</span>
                             </div>
                             <div class="size-medium color-gray d-flex align-items-center">
                                 <i class="fas fa-search fa-2x px-2" role="button"></i>
@@ -80,20 +82,31 @@
                         <div class="col-12 d-flex">
                             <div id="chat-bg" class="flex-grow-1">
                                 <div class="container">
-                                    <div class="row d-flex p-3">
-                                        <!-- <div class="col-4 offset-1">.col-md-4 .offset-1</div>
-                                        <div class="col-4 offset-3">.col-md-4 .offset-3</div> -->
-                                        <div class="col-7 offset-6 w-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, necessitatibus labore placeat excepturi totam</div>
-                                        <div class="col-7 offset-6 w-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, necessitatibus labore placeat excepturi totam</div>
-                                        <div class="offset-0 col-6 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut commodi, esse ipsam impedit nam corporis, unde aliquam illo ab illum, in consectetur reprehenderit reiciendis excepturi possimus quia culpa. Omnis.</div>
+                                    <div class="row p-3">
+                                        <div class="offset-6 w-50 message active">
+                                            <div>
+                                                <div class="text">Hai portato a spasso il cane?</div>
+                                                <div class="date size-medium color-gray d-flex justify-content-end">31/01/2022 18:33:00</div>
+                                            </div>
+                                        </div>
+                                        <div class="offset-6 w-50 message active">
+                                            <div>
+                                                <div class="text">Ricordati di dargli da mangiare</div>
+                                                <div class="date size-medium color-gray d-flex justify-content-end">31/01/2022 18:33:28</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 message">
+                                             <div>
+                                                <div class="text">Tutto fatto!</div>
+                                                <div class="date size-medium color-gray d-flex justify-content-end">31/01/2022 18:33:28</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Message Section -->
-
-
                         <div class="col-12 bg-lightgray px-3 py-2 d-flex justify-content-between align-items-center" id="message-section">
                             <i class="far fa-smile size-bigger ps-2 pe-4 color-darkgray" role="button"></i>
                             <input type="text" class="w-100 rounded p-2" placeholder="Scrivi un messaggio">
