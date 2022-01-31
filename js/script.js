@@ -41,8 +41,6 @@ const root = new Vue ({
             name: 'Salvatore',
             avatar: '_8',
           },
-          
-          
         ]
       }
 });
