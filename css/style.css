@@ -48,3 +48,12 @@ input {
 .color-lightblue{
     color: #8EDAFC;
 }
+
+/* Sections */
+
+/* Contacts Section */
+
+#contacts-section{
+    max-height: 500px;
+    overflow-y: scroll;
+}
