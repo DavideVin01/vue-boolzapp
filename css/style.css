@@ -5,8 +5,8 @@ img{
     border-radius: 50%;
 }
 
-.color-gray{
-    color: #B1B1B1;
+input {
+    border: 0;
 }
 
 
@@ -38,6 +38,9 @@ img{
 
 .color-gray{
     color: #B1B1B1;
+}
+.color-lightgray{
+    color: #cacaca;
 }
 .color-darkgray{
     color: #757575;
