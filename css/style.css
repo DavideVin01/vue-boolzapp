@@ -71,5 +71,5 @@ input {
 #chat-bg{
     background-image: url('../img/mine.jpg');
     height: 450px;
-    width: 100%;
+    /* width: 100%; */
 }
