@@ -63,10 +63,10 @@
                     </div>
                     
                     <!-- Right Column -->
-                    <div class="col-8 p-0" id="right-col">
+                    <div class="col-8 p-0 d-flex flex-column flex-grow-1" id="right-col">
 
                         <!-- Status Section -->
-                        <div class="col-12 d-flex justify-content-between p-2 bg-lightgray" id="avatar-section">
+                        <div class="col-12 d-flex justify-content-between p-2 bg-lightgray" id="status-section">
                             <div role="button" class="d-flex align-items-center">
                                 <div class="pe-2">
                                     <img src="img/avatar_1.jpg" alt="avatar">
@@ -84,13 +84,19 @@
                         </div>
 
                         <!-- Chat Section -->
-                        <div class="col-12 d-flex">
+                        <div class="col-12 d-flex flex-column flex-grow-1">
                             <div id="chat-bg" class="flex-grow-1">
                                 <div class="container d-flex flex-column">
                                     <ul class="px-3">
                                         <li class="message-container p-3 sent">
                                             <div class="message p-2 rounded">
                                                 <div>Hai portato a spasso il cane?</div>
+                                                <time class="date size-medium color-gray d-flex justify-content-end">31/01/2022 18:33:00</time>
+                                            </div>
+                                        </li>
+                                        <li class="message-container p-3 sent">
+                                            <div class="message p-2 rounded">
+                                                <div>Ricordati di dargli da mangiare</div>
                                                 <time class="date size-medium color-gray d-flex justify-content-end">31/01/2022 18:33:00</time>
                                             </div>
                                         </li>

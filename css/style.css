@@ -63,6 +63,8 @@ input {
 
 /* --- Sections --- */
 
+/* Status Section */
+
 /* Contacts Section */
 
 #contacts-section{
@@ -73,8 +75,10 @@ input {
 #chat-bg{
     background-image: url('../img/mine.jpg');
     overflow-y: scroll;
-    height: 450px;
-    max-width: 100%;
+    display: flex;
+    flex-grow: 1;
+    /* height: 100%; */
+    /* max-width: 100%; */
 }
 
 /* Chat section */
