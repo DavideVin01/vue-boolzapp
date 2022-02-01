@@ -76,7 +76,7 @@ input {
     background-image: url('../img/mine.jpg');
     overflow-y: scroll;
     display: flex;
-    max-height: 450px;
+    /* min-height: 450px; */
     flex-grow: 1;
 }
 
