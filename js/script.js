@@ -186,6 +186,9 @@ const root = new Vue ({
       },
       changeContact(index){
         this.currentIndex = index;
-    }     
+      },
+      isActive(index){
+        return index === this.currentIndex;
+      },    
     }
 });

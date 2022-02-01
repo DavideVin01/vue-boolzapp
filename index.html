@@ -88,13 +88,13 @@
                             <div id="chat-bg" class="flex-grow-1">
                                 <div class="container d-flex flex-column">
                                     <ul class="px-3">
-                                        <li v-if="message.status === 'sent'" v-for="(message, index) in contacts[currentIndex].messages" class="message-container p-3 sent" :class="{sent: message.status}">
+                                        <li v-if="message.status === 'sent'" v-for="(message, index) in contacts[currentIndex].messages" class="message-container p-3 sent" :class="{sent: isActive(index)}">
                                             <div class="message p-2 rounded">
                                                 <div>{{message.text}}</div>
                                                 <time class="date size-medium color-gray d-flex justify-content-end">{{message.date}}</time>
                                             </div>
                                         </li>
-                                        <li v-if="message.status === 'received'" v-for="(message, index) in contacts[currentIndex].messages" class="message-container p-3 sent" :class="{received: message.status}">
+                                        <li v-else class="message-container p-3 received">
                                             <div class="message p-2 rounded">
                                                 <div>{{message.text}}</div>
                                                 <time class="date size-medium color-gray d-flex justify-content-end">{{message.date}}</time>
