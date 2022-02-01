@@ -88,13 +88,13 @@
                             <div id="chat-bg" class="flex-grow-1">
                                 <div class="container d-flex flex-column">
                                     <ul class="px-3">
-                                        <li class="message-container p-3 sent">
+                                        <li v-for="message in contacts" class="message-container p-3 sent" :class="{sent: message.status}">
                                             <div class="message p-2 rounded">
-                                                <div>Hai portato a spasso il cane?</div>
+                                                <div>Ciao</div>
                                                 <time class="date size-medium color-gray d-flex justify-content-end">31/01/2022 18:33:00</time>
                                             </div>
                                         </li>
-                                        <li class="message-container p-3 sent">
+                                        <!-- <li class="message-container p-3 sent">
                                             <div class="message p-2 rounded">
                                                 <div>Ricordati di dargli da mangiare</div>
                                                 <time class="date size-medium color-gray d-flex justify-content-end">31/01/2022 18:33:00</time>
@@ -105,7 +105,7 @@
                                                 <div>Tutto fatto!</div>
                                                 <time class="date size-medium color-gray d-flex justify-content-end">31/01/2022 18:33:00</time>
                                             </div>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>

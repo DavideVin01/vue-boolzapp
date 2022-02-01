@@ -4,6 +4,7 @@ Vue.config.devtools = true;
 const root = new Vue ({
     el: '#root',
     data: {
+      currectIndex: 0,
       user: {
         name: 'Davide',
         avatar: '_io'
