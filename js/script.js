@@ -164,14 +164,24 @@ const root = new Vue ({
           visible: true,
           messages: [{
             date: '10/01/2020 15:30:55',
-            text: 'Lo sai che ha aperto una nuova pizzeria?',
+            text: 'Ciao Salvo, oggi puoi tenermi il cane?',
             status: 'sent'
           },
           {
             date: '10/01/2020 15:50:00',
-            text: 'Si, ma preferirei andare al cinema',
+            text: 'Oggi ho un colloquio importante e devo uscire di casa',
+            status: 'sent'
+          },
+          {
+            date: '10/01/2020 15:50:00',
+            text: 'Ciao Davide',
             status: 'received'
-          }
+          },
+          {
+            date: '10/01/2020 15:50:00',
+            text: 'Mi spiace, oggi sono al cinema',
+            status: 'received'
+          },
           ],
         },
       ],
