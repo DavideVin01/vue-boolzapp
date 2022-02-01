@@ -4,6 +4,7 @@ Vue.config.devtools = true;
 const root = new Vue ({
     el: '#root',
     data: {
+      newMessage: '',
       currentIndex: 0,
       user: {
         name: 'Davide',
@@ -154,5 +155,14 @@ const root = new Vue ({
           ],
         },
       ],
+    },
+    methods: {
+      addMessage(){
+        const newMessage = this.newMessage.trim();
+        if (newMessage){
+            this.messages.push({date: '10/01/2020 15:30:55', text: newMessage, status: 'sent'});
+        }
+        this.newMessage = '';
+      },
     }
 });
