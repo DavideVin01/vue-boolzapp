@@ -88,10 +88,10 @@
                             <div id="chat-bg" class="flex-grow-1">
                                 <div class="container d-flex flex-column">
                                     <ul class="px-3">
-                                        <li v-for="message in messages" class="message-container p-3 sent" :class="{sent: message.status}">
+                                        <li v-for="(message, index) in contacts[currentIndex].messages" class="message-container p-3 sent" :class="{status: message.status}">
                                             <div class="message p-2 rounded">
-                                                <div>{{messages.text}}</div>
-                                                <time class="date size-medium color-gray d-flex justify-content-end">{{messages.date}}</time>
+                                                <div>{{message.text}}</div>
+                                                <time class="date size-medium color-gray d-flex justify-content-end">{{message.date}}</time>
                                             </div>
                                         </li>
                                         <!-- <li class="message-container p-3 sent">
