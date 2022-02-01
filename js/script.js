@@ -73,8 +73,72 @@ const root = new Vue ({
           ],
         },
         {
-          name: 'Luisa',
+          name: 'Marco',
           avatar: '_4',
+          visible: true,
+          messages: [{
+            date: '10/01/2020 15:30:55',
+            text: 'Lo sai che ha aperto una nuova pizzeria?',
+            status: 'sent'
+          },
+          {
+            date: '10/01/2020 15:50:00',
+            text: 'Si, ma preferirei andare al cinema',
+            status: 'received'
+          }
+          ],
+        },
+        {
+          name: 'Giuseppe',
+          avatar: '_5',
+          visible: true,
+          messages: [{
+            date: '10/01/2020 15:30:55',
+            text: 'Lo sai che ha aperto una nuova pizzeria?',
+            status: 'sent'
+          },
+          {
+            date: '10/01/2020 15:50:00',
+            text: 'Si, ma preferirei andare al cinema',
+            status: 'received'
+          }
+          ],
+        },
+        {
+          name: 'Luisa',
+          avatar: '_6',
+          visible: true,
+          messages: [{
+            date: '10/01/2020 15:30:55',
+            text: 'Lo sai che ha aperto una nuova pizzeria?',
+            status: 'sent'
+          },
+          {
+            date: '10/01/2020 15:50:00',
+            text: 'Si, ma preferirei andare al cinema',
+            status: 'received'
+          }
+          ],
+        },
+        {
+          name: 'Paola',
+          avatar: '_7',
+          visible: true,
+          messages: [{
+            date: '10/01/2020 15:30:55',
+            text: 'Lo sai che ha aperto una nuova pizzeria?',
+            status: 'sent'
+          },
+          {
+            date: '10/01/2020 15:50:00',
+            text: 'Si, ma preferirei andare al cinema',
+            status: 'received'
+          }
+          ],
+        },
+        {
+          name: 'Salvatore',
+          avatar: '_8',
           visible: true,
           messages: [{
             date: '10/01/2020 15:30:55',
@@ -91,44 +155,3 @@ const root = new Vue ({
       ],
     }
 });
-
-// {
-//   user: {
-//     name: 'Nome Utente',
-//     avatar: '_io'
-//   },
-//   contacts: [
-//     {
-//       name: 'Michele',
-//       avatar: '_1',
-//     },
-//     {
-//       name: 'Fabio',
-//       avatar: '_2',
-//     },
-//     {
-//       name: 'Samuele',
-//       avatar: '_3',
-//     },
-//     {
-//       name: 'Marco',
-//       avatar: '_4',
-//     },
-//     {
-//       name: 'Giuseppe',
-//       avatar: '_5',
-//     },
-//     {
-//       name: 'Luisa',
-//       avatar: '_6',
-//     },
-//     {
-//       name: 'Paola',
-//       avatar: '_7',
-//     },
-//     {
-//       name: 'Salvatore',
-//       avatar: '_8',
-//     },
-//   ]
-// }
