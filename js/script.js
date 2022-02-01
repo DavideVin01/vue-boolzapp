@@ -187,10 +187,14 @@ const root = new Vue ({
       ],
     },
     methods: {
-      addMessage(){
+      addMessage(currentIndex){
         const newMessage = this.newMessage.trim();
         if (newMessage){
-            this.messages.push({date: '10/01/2020 15:30:55', text: newMessage, status: 'sent'});
+            this.contacts[currentIndex].messages.push({date: '10/01/2020 15:30:55', text: newMessage, status: 'sent'});
+            setTimeout(function (currentIndex) {
+              this.contacts[currentIndex].messages.push({date: '10/01/2020 15:30:55', text: 'Ok', status: 'received'});
+              // alert('g')
+          }, 1000);
         }
         this.newMessage = '';
       },
@@ -199,6 +203,6 @@ const root = new Vue ({
       },
       isActive(index){
         return index === this.currentIndex;
-      },    
-    }
+      },
+    },
 });
