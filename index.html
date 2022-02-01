@@ -53,7 +53,7 @@
                         <!-- Contacts Section -->
                         <div class="col-12">
                             <div id="contacts-section" class="bg-light">
-                                <div v-for="(contact, index) in contacts" role="button" class="py-2 px-3">
+                                <div v-for="(contact, index) in contacts" role="button" class="py-2 px-3" @click="changeContact(index)">
                                     <img :src="`img/avatar${contact.avatar}.jpg`" alt="avatar">
                                     <span>{{ contact.name }}</span>
                                 </div>

@@ -49,7 +49,7 @@ const root = new Vue ({
           {
             date: '20/03/2020 16:35:00',
             text: 'Mi piacerebbe ma devo andare a fare la spesa.',
-            status: 'received'
+            status: 'sent'
           }
           ],
         },
@@ -96,12 +96,12 @@ const root = new Vue ({
           visible: true,
           messages: [{
             date: '10/01/2020 15:30:55',
-            text: 'Lo sai che ha aperto una nuova pizzeria?',
+            text: 'Vuoi venire domani al cinema?',
             status: 'sent'
           },
           {
             date: '10/01/2020 15:50:00',
-            text: 'Si, ma preferirei andare al cinema',
+            text: 'Volentieri!',
             status: 'received'
           }
           ],
@@ -112,14 +112,24 @@ const root = new Vue ({
           visible: true,
           messages: [{
             date: '10/01/2020 15:30:55',
-            text: 'Lo sai che ha aperto una nuova pizzeria?',
+            text: 'Ciao Davide, ti va di fare i compiti assieme domani?',
+            status: 'received'
+          },
+          {
+            date: '10/01/2020 15:50:00',
+            text: 'Certo, ti va bene per le 16:00?',
             status: 'sent'
           },
           {
             date: '10/01/2020 15:50:00',
-            text: 'Si, ma preferirei andare al cinema',
+            text: 'Alle 16:00 è perfetto, a domani!',
             status: 'received'
-          }
+          },
+          {
+            date: '10/01/2020 15:50:00',
+            text: 'A domani!',
+            status: 'sent'
+          },
           ],
         },
         {
@@ -128,14 +138,24 @@ const root = new Vue ({
           visible: true,
           messages: [{
             date: '10/01/2020 15:30:55',
-            text: 'Lo sai che ha aperto una nuova pizzeria?',
+            text: 'Ciao Paola, come va la febbre?',
             status: 'sent'
           },
           {
             date: '10/01/2020 15:50:00',
-            text: 'Si, ma preferirei andare al cinema',
+            text: 'Ciao Davide, purtroppo ancora male..',
             status: 'received'
-          }
+          },
+          {
+            date: '10/01/2020 15:30:55',
+            text: 'Mi spiace.. riprenditi presto!',
+            status: 'sent'
+          },
+          {
+            date: '10/01/2020 15:50:00',
+            text: 'Grazie mille!!',
+            status: 'received'
+          },
           ],
         },
         {
@@ -164,5 +184,8 @@ const root = new Vue ({
         }
         this.newMessage = '';
       },
+      changeContact(index){
+        this.currentIndex = index;
+    }     
     }
 });
