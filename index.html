@@ -21,8 +21,8 @@
                         <!-- Avatar Section -->
                         <div class="col-12 d-flex justify-content-between p-2 bg-lightgray" id="avatar-section">
                             <div role="button">
-                                <img src="img/avatar_io.jpg" alt="avatar">
-                                <span>Nome utente</span>
+                                <img :src="`img/avatar${user.avatar}.jpg`" alt="Profile Picture">
+                                <span>{{ user.name }}</span>
                             </div>
                             <div class="size-medium color-gray d-flex align-items-center">
                                 <i class="fas fa-circle-notch fa-2x px-2" role="button"></i>
@@ -102,7 +102,7 @@
                                         </li>
                                         <li class="message-container p-3 received">
                                             <div class="message p-2 rounded-3">
-                                                <div>Hai portato a spasso il cane?</div>
+                                                <div>Tutto fatto!</div>
                                                 <time class="date size-medium color-gray d-flex justify-content-end">31/01/2022 18:33:00</time>
                                             </div>
                                         </li>
