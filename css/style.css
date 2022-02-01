@@ -79,13 +79,18 @@ input {
 
 /* Chat section */
 
-.message{
-    padding: 10px 25px;
-    margin-bottom: 20px;
-    background-color: #FFF;
-    border-radius: 10px;
+.message-container{
+    display: flex;
 }
-
-.message.active{
-  background-color: #D5F9BA;
+.message-container.sent{
+    justify-content: flex-end;
+}
+.message-container.received{
+    justify-content: flex-start;
+}
+.message-container.sent .message{
+    background-color: #d5f9ba;
+}
+.message-container.received .message{
+    background-color: #FFF;
 }
