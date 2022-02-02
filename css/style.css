@@ -100,7 +100,7 @@ input {
 /* Contacts Section */
 
 #contacts-section{
-    max-height: 400px;
+    height: 398px;
     overflow-y: auto;
 }
 
