@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="row d-flex flex-row">
                     <!-- Left Column -->
-                    <div class="col-4 d-flex flex-column p-0" id="left-col">
+                    <div class="col-4 d-flex flex-column p-0 flex-grow-1" id="left-col">
 
                         <!-- Avatar Section -->
                         <div class="col-12 d-flex justify-content-between p-2 bg-lightgray" id="avatar-section">
@@ -61,8 +61,8 @@
                         </div>
 
                         <!-- Contacts Section -->
-                        <div class="col-12">
-                            <div id="contacts-section" class="bg-light">
+                        <div class="col-12 bg-light flex-grow-1">
+                            <div id="contacts-section">
                                 <div v-for="(contact, index) in filterContacts" role="button" class="py-2 px-3"
                                     @click=" changeContact(index)"
                                     :class="{active: isActive(index), hidden: contact.visible === false}">
