@@ -84,7 +84,8 @@
                                 </div>
                                 <div class="d-flex flex-column">
                                     <span>{{contacts[currentIndex].name}}</span>
-                                    <span class="size-medium color-darkgray">Ultimo accesso oggi alle</span>
+                                    <span class="size-medium color-darkgray">Ultimo accesso oggi
+                                        alle 16:15</span>
                                 </div>
                             </div>
                             <div class="size-medium color-gray d-flex align-items-center">
@@ -105,14 +106,14 @@
                                             <div class="message p-2 rounded">
                                                 <div>{{message.text}}</div>
                                                 <time
-                                                    class="date size-medium color-gray d-flex justify-content-end">{{message.date}}</time>
+                                                    class="date size-medium color-gray d-flex justify-content-end"><small>{{message.date}}</small></time>
                                             </div>
                                         </li>
                                         <li v-else class="message-container p-3 received">
                                             <div class="message p-2 rounded">
                                                 <div>{{message.text}}</div>
                                                 <time
-                                                    class="date size-medium color-gray d-flex justify-content-end">{{message.date}}</time>
+                                                    class="date size-medium color-gray d-flex justify-content-end"><small>{{message.date}}</small></time>
                                             </div>
                                         </li>
                                     </ul>
