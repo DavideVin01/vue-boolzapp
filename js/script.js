@@ -6,6 +6,7 @@ dayjs.extend(dayjs_plugin_customParseFormat);
 const root = new Vue({
   el: '#root',
   data: {
+    search: '',
     newMessage: '',
     currentIndex: 0,
     user: {
@@ -188,8 +189,17 @@ const root = new Vue({
       },
     ],
   },
+  computed: {
+    filterContacts() {
+      const filteredContacts = this.contacts.filter((contact) => {
+        return contact.name.toLowerCase().includes(this.search.toLowerCase());
+        // if (contact.name) {
+        // }
+      })
+      return filteredContacts;
+    },
+  },
   methods: {
-
     addMessage() {
       if (!this.newMessage) return;
 

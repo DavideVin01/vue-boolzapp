@@ -55,7 +55,8 @@
                         <div class="col-12 bg-lightgray p-2" id="search-section">
                             <div class="bg-light color-darkgray rounded">
                                 <i class="fas fa-search ps-3 pe-3 color-lightgray"></i>
-                                <input type="text" placeholder="Cerca o inizia una nuova chat" class="w-75 bg-light">
+                                <input type="text" placeholder="Cerca o inizia una nuova chat" class="w-75 bg-light"
+                                    v-model="search" :class="{hidden: contacts.visible === false}">
                             </div>
                         </div>
 
