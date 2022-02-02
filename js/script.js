@@ -192,11 +192,14 @@ const root = new Vue({
   },
   computed: {
     filterContacts() {
-      return this.contacts.filter((contact) => {
-        if (contact.name.toLowerCase().match(this.search.toLowerCase())) {
-          return visible = true;
+      this.contacts.forEach((el) => {
+        if (!el.name.toLowerCase().match(this.search.toLowerCase())) {
+          el.visible = false;
+        } else {
+          el.visible = true;
         }
-      });
+      })
+
     },
   },
   methods: {
@@ -219,10 +222,20 @@ const root = new Vue({
       this.contacts[this.currentIndex].messages.push(newText);
     },
     changeContact(index) {
-      this.currentIndex = index;
+      let i;
+      let trovato = false;
+      for (i = index; i < this.contacts.length && !trovato; i++) {
+        if (this.contacts[i].visible) {
+          this.currentIndex = i;
+          trovato = true;
+        }
+      }
     },
     isActive(index) {
       return index === this.currentIndex;
     },
+    // deleteMessage(index) {
+    //   this.contact.message.splice(1, 2);
+    // },
   },
 });
