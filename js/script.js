@@ -203,11 +203,9 @@ const root = new Vue({
     addMessage() {
       if (!this.newMessage) return;
 
-      // To get a new message
       this.getMessage(this.newMessage, 'sent');
       this.newMessage = '';
 
-      // To get CPU random answer
       setTimeout(() => {
         this.getMessage('Ok', 'received');
       }, 2000);

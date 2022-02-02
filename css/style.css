@@ -1,4 +1,4 @@
-/* Utilities */
+/* # Utilities */
 
 img{
     max-width: 50px;
@@ -36,7 +36,7 @@ input {
     position: relative;
 }
 
-/* Backgrounds */
+/* # Backgrounds */
 
 #background{
     width: auto;
@@ -60,7 +60,7 @@ input {
     background-color: #8EDAFC;
 }
 
-/* colors */
+/* # colors */
 
 .color-gray{
     color: #B1B1B1;
@@ -87,7 +87,7 @@ input {
     font-size: 20px;
 }
 
-/* --- Sections --- */
+/* # --- Sections --- */
 
 /* Notification Section */
 
