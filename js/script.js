@@ -234,8 +234,5 @@ const root = new Vue({
     isActive(index) {
       return index === this.currentIndex;
     },
-    // deleteMessage(index) {
-    //   this.contact.message.splice(1, 2);
-    // },
   },
 });
