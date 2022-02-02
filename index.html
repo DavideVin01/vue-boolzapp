@@ -56,15 +56,16 @@
                             <div class="bg-light color-darkgray rounded">
                                 <i class="fas fa-search ps-3 pe-3 color-lightgray"></i>
                                 <input type="text" placeholder="Cerca o inizia una nuova chat" class="w-75 bg-light"
-                                    v-model="search" :class="{hidden: contacts.visible === false}">
+                                    v-model="search">
                             </div>
                         </div>
 
                         <!-- Contacts Section -->
                         <div class="col-12">
                             <div id="contacts-section" class="bg-light">
-                                <div v-for="(contact, index) in contacts" role="button" class="py-2 px-3"
-                                    @click=" changeContact(index)" :class="{active: isActive(index)}">
+                                <div v-for="(contact, index) in filterContacts" role="button" class="py-2 px-3"
+                                    @click=" changeContact(index)"
+                                    :class="{active: isActive(index), hidden: contact.visible === false}">
                                     <img :src="`img/avatar${contact.avatar}.jpg`" alt="avatar">
                                     <span>{{ contact.name }}</span>
                                 </div>

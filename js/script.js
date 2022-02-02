@@ -191,12 +191,9 @@ const root = new Vue({
   },
   computed: {
     filterContacts() {
-      const filteredContacts = this.contacts.filter((contact) => {
-        return contact.name.toLowerCase().includes(this.search.toLowerCase());
-        // if (contact.name) {
-        // }
-      })
-      return filteredContacts;
+      return this.contacts.filter((contact) => {
+        return contact.name.toLowerCase().match(this.search.toLowerCase());
+      });
     },
   },
   methods: {
