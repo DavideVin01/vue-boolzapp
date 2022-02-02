@@ -187,18 +187,19 @@ const root = new Vue ({
       ],
     },
     methods: {
-      addMessage(currentIndex){
-        let newMessage = this.newMessage.trim();
-        if (newMessage){
-            this.contacts[currentIndex].messages.push({date: '10/01/2020 15:30:55', text: newMessage, status: 'sent'});
-            setTimeout(function (currentIndex) {
-              newMessage = 'Ok';
-              this.contacts[currentIndex].messages.push({text: newMessage});
-              // alert('g')
-          }, 1000);
+
+
+      addMessage(){
+        const newMessage = {
+          text: this.newMessage,
+          status: 'sent',
+          date: '10/01/2020 15:50:00',
         }
-        this.newMessage = '';
+
+        this.contacts[this.currentIndex].messages.push(newMessage);
       },
+
+      
       changeContact(index){
         this.currentIndex = index;
       },
