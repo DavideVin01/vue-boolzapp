@@ -67,7 +67,12 @@ input {
 
 /* --- Sections --- */
 
-/* Status Section */
+/* Notification Section */
+
+#notification-box{
+    width: 50px;
+    height: 50px;
+}
 
 /* Contacts Section */
 
