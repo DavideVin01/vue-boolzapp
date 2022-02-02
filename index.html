@@ -87,7 +87,7 @@
                                 <div class="d-flex flex-column">
                                     <span>{{contacts[currentIndex].name}}</span>
                                     <span class="size-medium color-darkgray">Ultimo accesso oggi
-                                        alle 16:15</span>
+                                        alle {{now}}</span>
                                 </div>
                             </div>
                             <div class="size-medium color-gray d-flex align-items-center">
@@ -105,7 +105,12 @@
                                         <li v-for="(message, index) in contacts[currentIndex].messages"
                                             class="message-container p-3 sent" :class="message.status">
                                             <div class="message p-2 rounded">
-                                                <div>{{message.text}}</div>
+                                                <span class="d-flex">
+                                                    <div>{{message.text}}</div>
+                                                    <button class="list-button">
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </button>
+                                                </span>
                                                 <time
                                                     class="date size-medium color-gray d-flex justify-content-end"><small>{{message.date}}</small></time>
                                             </div>

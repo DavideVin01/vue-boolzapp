@@ -6,6 +6,7 @@ dayjs.extend(dayjs_plugin_customParseFormat);
 const root = new Vue({
   el: '#root',
   data: {
+    now: dayjs().format('HH:mm'),
     search: '',
     newMessage: '',
     currentIndex: 0,
@@ -192,7 +193,10 @@ const root = new Vue({
   computed: {
     filterContacts() {
       return this.contacts.filter((contact) => {
-        return contact.name.toLowerCase().match(this.search.toLowerCase());
+        if (contact.name.toLowerCase().match(this.search.toLowerCase())) {
+          return visible = true;
+        }
+        // return contact.name.toLowerCase().match(this.search.toLowerCase());
       });
     },
   },

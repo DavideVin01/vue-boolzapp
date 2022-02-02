@@ -17,6 +17,18 @@ input {
     display: none;
 }
 
+.list-button{
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.fa-chevron-down{
+    font-size: 12px;
+    filter: opacity(.3);
+    position: relative;
+}
+
 /* Backgrounds */
 
 #background{
