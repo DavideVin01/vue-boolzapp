@@ -1,6 +1,8 @@
 console.log('VUE READY', Vue);
 Vue.config.devtools = true;
 
+dayjs.extend(dayjs_plugin_customParseFormat);
+
 const root = new Vue({
   el: '#root',
   data: {
