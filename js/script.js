@@ -206,7 +206,7 @@ const root = new Vue({
       const newText = {
         text,
         status,
-        date: '10/01/2020 15:50:00',
+        date: dayjs().format('DD/MM/YYYY HH:MM:SS'),
       };
       this.contacts[this.currentIndex].messages.push(newText);
     },
