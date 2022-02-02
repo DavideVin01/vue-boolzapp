@@ -105,12 +105,12 @@
                                         <li v-for="(message, index) in contacts[currentIndex].messages"
                                             class="message-container p-3 sent" :class="message.status">
                                             <div class="message p-2 rounded">
-                                                <span class="d-flex">
+                                                <div class="d-flex">
                                                     <div>{{message.text}}</div>
                                                     <button class="list-button">
                                                         <i class="fas fa-chevron-down"></i>
                                                     </button>
-                                                </span>
+                                                </div>
                                                 <time
                                                     class="date color-gray d-flex justify-content-end">{{message.date}}</time>
                                             </div>
