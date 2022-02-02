@@ -203,7 +203,9 @@ const root = new Vue ({
         this.currentIndex = index;
       },
       isActive(index){
-        this.currentIndex === index;
+        return index === this.currentIndex;
       },
     },
 });
+
+//Rifare commit dove ripristino isActive come prima
