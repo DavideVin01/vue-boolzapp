@@ -20,6 +20,10 @@ input {
     display: none;
 }
 
+.date{
+    font-size: 10px;
+}
+
 .list-button{
     border: 0;
     border-radius: 50%;

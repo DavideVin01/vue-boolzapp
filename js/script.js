@@ -196,7 +196,6 @@ const root = new Vue({
         if (contact.name.toLowerCase().match(this.search.toLowerCase())) {
           return visible = true;
         }
-        // return contact.name.toLowerCase().match(this.search.toLowerCase());
       });
     },
   },
