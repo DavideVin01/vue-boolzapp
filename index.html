@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css' integrity='sha512-4wfcoXlib1Aq0mUtsLLM74SZtmB73VHTafZAvxIp/Wk9u1PpIsrfmTvK0+yKetghCL8SHlZbMyEcV8Z21v42UQ==' crossorigin='anonymous'/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css'
+        integrity='sha512-4wfcoXlib1Aq0mUtsLLM74SZtmB73VHTafZAvxIp/Wk9u1PpIsrfmTvK0+yKetghCL8SHlZbMyEcV8Z21v42UQ=='
+        crossorigin='anonymous' />
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Boolzapp</title>
 </head>
+
 <body>
     <div id="root">
         <div id="background" class="container-fluid p-4">
@@ -30,7 +35,7 @@
                                 <i class="fas fa-ellipsis-v fa-2x px-2" role="button"></i>
                             </div>
                         </div>
-                        
+
                         <!-- Notification Section -->
                         <div class="col-12 bg-lightblue d-flex p-2" id="notification-section">
                             <div class="bg-light rounded-circle px-3 d-flex align-items-center" role="button">
@@ -41,7 +46,7 @@
                                 <div class="color-darkgray" role="button"><u>Attiva notifiche desktop</u></div>
                             </div>
                         </div>
-                        
+
                         <!-- Search Section -->
                         <div class="col-12 bg-lightgray p-2" id="search-section">
                             <div class="bg-light color-darkgray rounded">
@@ -49,19 +54,20 @@
                                 <input type="text" placeholder="Cerca o inizia una nuova chat" class="w-75 bg-light">
                             </div>
                         </div>
-                        
+
                         <!-- Contacts Section -->
                         <div class="col-12">
                             <div id="contacts-section" class="bg-light">
-                                <div v-for="(contact, index) in contacts" role="button" class="py-2 px-3" @click="changeContact(index)">
+                                <div v-for="(contact, index) in contacts" role="button" class="py-2 px-3"
+                                    @click="changeContact(index)">
                                     <img :src="`img/avatar${contact.avatar}.jpg`" alt="avatar">
                                     <span>{{ contact.name }}</span>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
-                    
+
                     <!-- Right Column -->
                     <div class="col-8 p-0 d-flex flex-column flex-grow-1" id="right-col">
 
@@ -69,7 +75,8 @@
                         <div class="col-12 d-flex justify-content-between p-2 bg-lightgray" id="status-section">
                             <div role="button" class="d-flex align-items-center">
                                 <div class="pe-2">
-                                    <img :src="`img/avatar${contacts[currentIndex].avatar}.jpg`" :alt="contacts[currentIndex].name">
+                                    <img :src="`img/avatar${contacts[currentIndex].avatar}.jpg`"
+                                        :alt="contacts[currentIndex].name">
                                 </div>
                                 <div class="d-flex flex-column">
                                     <span>{{contacts[currentIndex].name}}</span>
@@ -88,16 +95,20 @@
                             <div id="chat-bg" class="flex-grow-1">
                                 <div class="container d-flex flex-column">
                                     <ul class="px-3">
-                                        <li v-if="message.status === 'sent'" v-for="(message, index) in contacts[currentIndex].messages" class="message-container p-3 sent" :class="{sent: isActive(index)}">
+                                        <li v-if="message.status === 'sent'"
+                                            v-for="(message, index) in contacts[currentIndex].messages"
+                                            class="message-container p-3 sent" :class="{sent: isActive(index)}">
                                             <div class="message p-2 rounded">
                                                 <div>{{message.text}}</div>
-                                                <time class="date size-medium color-gray d-flex justify-content-end">{{message.date}}</time>
+                                                <time
+                                                    class="date size-medium color-gray d-flex justify-content-end">{{message.date}}</time>
                                             </div>
                                         </li>
                                         <li v-else class="message-container p-3 received">
                                             <div class="message p-2 rounded">
                                                 <div>{{message.text}}</div>
-                                                <time class="date size-medium color-gray d-flex justify-content-end">{{message.date}}</time>
+                                                <time
+                                                    class="date size-medium color-gray d-flex justify-content-end">{{message.date}}</time>
                                             </div>
                                         </li>
                                     </ul>
@@ -106,18 +117,21 @@
                         </div>
 
                         <!-- Message Section -->
-                        <div class="col-12 bg-lightgray px-3 py-2 d-flex justify-content-between align-items-center" id="message-section">
+                        <div class="col-12 bg-lightgray px-3 py-2 d-flex justify-content-between align-items-center"
+                            id="message-section">
                             <i class="far fa-smile size-bigger ps-2 pe-4 color-darkgray" role="button"></i>
-                            <input type="text" class="w-100 rounded p-2" placeholder="Scrivi un messaggio" @keyup.enter="addMessage(currentIndex)" v-model.trim="newMessage">
+                            <input type="text" class="w-100 rounded p-2" placeholder="Scrivi un messaggio"
+                                @keyup.enter="addMessage(currentIndex)" v-model.trim="newMessage">
                             <i class="fas fa-microphone size-bigger ps-4 pe-2 color-darkgray" role="button"></i>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
