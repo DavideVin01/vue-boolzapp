@@ -79,12 +79,12 @@ input {
 
 #contacts-section{
     max-height: 400px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #chat-bg{
     background-image: url('../img/mine.jpg');
-    overflow-y: scroll;
+    overflow-y: auto;
     display: flex;
     height: 450px;
     flex-grow: 1;
