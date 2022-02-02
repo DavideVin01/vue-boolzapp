@@ -192,11 +192,11 @@ const root = new Vue({
   },
   computed: {
     filterContacts() {
-      this.contacts.forEach((el) => {
-        if (!el.name.toLowerCase().match(this.search.toLowerCase())) {
-          el.visible = false;
+      this.contacts.forEach((contact) => {
+        if (!contact.name.toLowerCase().match(this.search.toLowerCase())) {
+          contact.visible = false;
         } else {
-          el.visible = true;
+          contact.visible = true;
         }
       })
 
