@@ -20,7 +20,7 @@
 <body>
     <div id="root">
         <div id="background" class="container-fluid p-4">
-            <div class="container">
+            <div class="container shadow">
                 <div class="row d-flex flex-row">
                     <!-- Left Column -->
                     <div class="col-4 d-flex flex-column p-0 flex-grow-1" id="left-col">
@@ -104,7 +104,7 @@
                                     <ul class="px-3">
                                         <li v-for="(message, index) in contacts[currentIndex].messages"
                                             class="message-container p-3 sent" :class="message.status">
-                                            <div class="message p-2 rounded">
+                                            <div class="message p-2 rounded shadow">
                                                 <div class="d-flex">
                                                     <div>{{message.text}}</div>
                                                     <button class="list-button">
