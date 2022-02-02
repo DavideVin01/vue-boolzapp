@@ -188,11 +188,12 @@ const root = new Vue ({
     },
     methods: {
       addMessage(currentIndex){
-        const newMessage = this.newMessage.trim();
+        let newMessage = this.newMessage.trim();
         if (newMessage){
             this.contacts[currentIndex].messages.push({date: '10/01/2020 15:30:55', text: newMessage, status: 'sent'});
             setTimeout(function (currentIndex) {
-              this.contacts[currentIndex].messages.push({date: '10/01/2020 15:30:55', text: 'Ok', status: 'received'});
+              newMessage = 'Ok';
+              this.contacts[currentIndex].messages.push({text: newMessage});
               // alert('g')
           }, 1000);
         }
@@ -202,7 +203,7 @@ const root = new Vue ({
         this.currentIndex = index;
       },
       isActive(index){
-        return index === this.currentIndex;
+        this.currentIndex === index;
       },
     },
 });
