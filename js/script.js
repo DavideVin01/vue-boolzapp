@@ -207,5 +207,3 @@ const root = new Vue ({
       },
     },
 });
-
-//Rifare commit dove ripristino isActive come prima
