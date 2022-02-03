@@ -222,9 +222,8 @@ const root = new Vue({
       this.contacts[this.currentIndex].messages.push(newText);
     },
     changeContact(index) {
-      let i;
       let trovato = false;
-      for (i = index; i < this.contacts.length && !trovato; i++) {
+      for (let i = index; i < this.contacts.length && !trovato; i++) {
         if (this.contacts[i].visible) {
           this.currentIndex = i;
           trovato = true;
