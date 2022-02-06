@@ -133,3 +133,44 @@ input {
 .message-container.received .message{
     background-color: #FFF;
 }
+
+/* Arrow Button */
+
+/* .dropdown:active {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content:active {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 30px;
+    z-index: 1;
+} */
+
+.drop{
+    position: relative;
+}
+
+.drop-menu{
+    position: absolute;
+    top: calc(100% + .10rem);
+    right: 0;
+    background-color: #fff;
+    padding: .75rem;
+    margin: 5px;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+
+.drop > .drop-button:focus + .drop-menu{
+    opacity: 1;
+}
+
+.drop-button{
+    background-color: transparent;
+    border: 0;
+}
