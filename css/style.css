@@ -154,7 +154,6 @@ input {
 }
 
 .drop-menu{
-    width: 100px;
     position: absolute;
     top: calc(100% + .10rem);
     right: 0;

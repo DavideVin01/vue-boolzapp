@@ -225,7 +225,7 @@ const root = new Vue({
     },
     filterContacts() {
       this.contacts.forEach((contact) => {
-        if (!contact.name.toLowerCase().match(this.search.toLowerCase())) {
+        if (!contact.name.toLowerCase().includes(this.search.toLowerCase())) {
           contact.visible = false;
         } else {
           contact.visible = true;
@@ -233,10 +233,7 @@ const root = new Vue({
       })
     },
     deleteMessage(index) {
-      this.contacts[currentIndex].messages = this.contacts[currentIndex].messages.filter((message, currentIndex) => {
-        if (currentIndex === index) return false;
-        else return true;
-      });
-    }
+      this.contacts[this.currentIndex].messages.splice(index, 1);
+    },
   },
 });
