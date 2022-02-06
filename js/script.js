@@ -232,5 +232,11 @@ const root = new Vue({
         }
       })
     },
+    deleteMessage(index) {
+      this.contacts[currentIndex].messages = this.contacts[currentIndex].messages.filter((message, currentIndex) => {
+        if (currentIndex === index) return false;
+        else return true;
+      });
+    }
   },
 });
